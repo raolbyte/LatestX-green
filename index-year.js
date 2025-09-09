@@ -28,7 +28,7 @@ const displayUI = (message, type = "info") => {
 
 const markCommit = (x, y) => {
   const date = moment()
-    .year(random.int(2008, 2025))
+    .year(random.int(1945, 2025))
     .add(x, "w")
     .add(y, "d")
     .format();
@@ -37,7 +37,7 @@ const markCommit = (x, y) => {
     date: date,
     commit: {
       message: `Commit on ${date}`,
-      author: "latesturltech@gmail.com",
+      author: "raolantidonasi@gmail.com",
       branch: "main",
     },
   };
@@ -57,7 +57,7 @@ const makeCommits = (n) => {
   const x = random.int(0, 54);
   const y = random.int(0, 6);
   const date = moment()
-    .year(random.int(2008, 2025))
+    .year(random.int(1945, 2025))
     .add(x, "w")
     .add(y, "d")
     .format();
@@ -66,7 +66,7 @@ const makeCommits = (n) => {
     date: date,
     commit: {
       message: `Commit #${n} on ${date}`,
-      author: "latesturltech@gmail.com",
+      author: "raolantidonasi@gmail.com",
       branch: "main",
     },
   };
